@@ -9,6 +9,7 @@ body {
 
 h1 {
   font-family: 'Oswald';
+  letter-spacing: 1.5px;
   font-weight: 700;
   font-size: 54px;
   line-height: 60px;
@@ -46,20 +47,69 @@ a {
   text-decoration: none;
 }
 
-
-.GridContainer {
-  box-sizing: border-box;
-  padding: 10px;
+.grid {
   display: grid;
   grid-gap: 10px;
 }
 
-.HeroBlock {
-  padding: 80px;
+
+.block {
+  position: relative;
   background-color: #0BBACD;
-  height: calc(100vh - 20px);
-  display: block;
-  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 240px 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  grid-gap: 0em;
+  padding: 0;
+}
+
+.image-container {
+  grid-row: 2;
+  grid-column: 2;
+  overflow: hidden;
+  text-align: right;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.lockup {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 240px 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  grid-gap: 0em;
+  padding: 0;
+}
+
+.header {
+  grid-row: 1;
+  grid-column: 1;
+  align-self: center;
+  padding-left: 80px;
+}
+
+.content {
+  max-width: 392px;
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
 }
 
 .ContactBlock {
@@ -67,10 +117,4 @@ a {
   height: 100vh;
   display: flex;
   align-items: center;
-}
-
-.HeroLockup {
-  display: block;
-  max-width: 392px;
-  margin-left: 40px;
 }
