@@ -18,6 +18,7 @@ const IndexPage = () => (
           <p>We specialise in high quality custom printed tees that send a message. test</p>
           <button to="/page-2/">Contact</button>
         </div>
+        <img src="images/tshirt.png"/>
       </div>
       <div className="ContactBlock">
         <h1>LETS TALK SH*RT</h1>

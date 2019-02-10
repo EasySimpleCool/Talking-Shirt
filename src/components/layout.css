@@ -55,6 +55,7 @@ a {
 }
 
 .HeroBlock {
+  padding: 80px;
   background-color: #0BBACD;
   height: calc(100vh - 20px);
   display: block;
@@ -70,5 +71,6 @@ a {
 
 .HeroLockup {
   display: block;
-  margin-left: 200px;
+  max-width: 392px;
+  margin-left: 40px;
 }
