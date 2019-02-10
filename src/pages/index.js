@@ -32,7 +32,7 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="ContactBlock">
-        <h1>LETS TALK SH*RT</h1>
+        {/* <h1>LETS TALK SH*RT</h1>
         <p>Contact us via email or phone to receive a quote.</p>
         <form>
           <label>
@@ -40,7 +40,7 @@ const IndexPage = () => (
     <input type="text" name="name" />
           </label>
           <input type="submit" value="Submit" />
-        </form>
+        </form> */}
       </div>
     </div>
   </Layout>
