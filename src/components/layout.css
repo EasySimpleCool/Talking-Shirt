@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: 10;
+  margin: 0;
   font-size: 20px;
   line-height: 1.3;
 }
@@ -46,8 +46,23 @@ a {
   text-decoration: none;
 }
 
+
+.GridContainer {
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+}
+
 .HeroBlock {
   background-color: #0BBACD;
+  height: calc(100vh - 20px);
+  display: block;
+  align-items: center;
+}
+
+.ContactBlock {
+  background-color: #4F4F4F;
   height: 100vh;
   display: flex;
   align-items: center;
